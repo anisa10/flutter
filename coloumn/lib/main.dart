@@ -29,9 +29,19 @@ class MyApp extends StatelessWidget {
           color: Colors.pink[100],
           borderRadius: BorderRadius.circular(10),
           ),
-          child: new Center(
-            child: new Text("Data Indonesia"),
-            ),
+          child: Center(
+                    child: Text(
+                      "Kasus Indonesia "
+                      "Positif : 800 "
+                      "Sembuh : 600 "
+                      "Meninggal : 200 ",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
         ),
       ),
       
@@ -43,9 +53,19 @@ class MyApp extends StatelessWidget {
           color: Colors.pink[300],
           borderRadius: BorderRadius.circular(10),
           ),
-          child: new Center(
-            child: new Text("Data Dunia"),
-            ),
+          child: Center(
+                    child: Text(
+                      "Kasus Global "
+                      "Positif : 1000 "
+                      "Sembuh : 900 "
+                      "Meninggal : 100 ",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
         ),
       ),
       
