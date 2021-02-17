@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.lightBlue,
         appBar: AppBar(
-          title: Text('Priska Aprilia A'),
+          title: Text('Anisaa'),
           backgroundColor: Colors.purpleAccent,
         ),
         body: Column(
