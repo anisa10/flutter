@@ -8,8 +8,9 @@ class PostPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.teal,
       appBar: AppBar(
-        title: Text('Get Data Dari API'),
+        title: Text('Tracking Covid'),
       ),
       body: FutureBuilder(
         future: _getPost.manggilPostData(),

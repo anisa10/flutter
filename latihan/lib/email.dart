@@ -1,27 +1,9 @@
 import 'package:flutter/material.dart';
 
-class DetailPost extends StatelessWidget {
-  const DetailPost({
-    Key key,
-    @required this.name,
-    @required this.positif,
-    @required this.sembuh,
-    @required this.meninggal,
-  }) : super(key: key);
-
-  final String name;
-  final String positif;
-  final String sembuh;
-  final String meninggal;
-
+class Email extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.teal,
-      appBar: AppBar(
-        title: Text(
-            'Indonesia'),
-      ),
+    return new Scaffold(
       body: ListView(
         scrollDirection: Axis.vertical,
         children: <Widget>[
@@ -29,7 +11,7 @@ class DetailPost extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Container(
-                height: 250,
+                height: 230,
                 width: 150,
                 padding: EdgeInsets.all(15),
                 margin: EdgeInsets.all(15),
@@ -42,16 +24,16 @@ class DetailPost extends StatelessWidget {
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.redAccent,
+                        color: Colors.blue,
                         spreadRadius: 2,
                         blurRadius: 3,
                         offset: Offset(0, 3), // changes position of shadow
                       )
                     ],
-                    color: Colors.yellowAccent),
+                    color: Colors.red),
                 child: Column(
                   children: <Widget>[
-                    Image.asset('assets/positif.png', width: 100),
+                    Image.asset('assets/kecewa.png', width: 100),
                     Padding(padding: EdgeInsets.all(10)), //Untuk Jarak paragraf
 
                     Text(
@@ -62,22 +44,18 @@ class DetailPost extends StatelessWidget {
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
-              positif,
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            SizedBox(
-              height: 10,
-            ),
+                      '1000',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15,
+                      ),
+                    ),
                     Text('Orang'),
                   ],
                 ),
               ),
               Container(
-                height: 250,
+                height: 230,
                 width: 150,
                 padding: EdgeInsets.all(15),
                 margin: EdgeInsets.all(15),
@@ -90,47 +68,43 @@ class DetailPost extends StatelessWidget {
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.pinkAccent,
+                        color: Colors.yellow,
                         spreadRadius: 2,
                         blurRadius: 3,
                         offset: Offset(0, 3), // changes position of shadow
                       )
                     ],
-                    color: Colors.greenAccent),
+                    color: Colors.green),
                 child: Column(
                   children: <Widget>[
                     Image.asset('assets/senang.png', width: 100),
                     Padding(padding: EdgeInsets.all(10)), //Untuk Jarak paragraf
 
                     Text(
-                      'SEMBUH \n',
+                      'Sembuh \n',
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 15,
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
-              sembuh,
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            SizedBox(
-              height: 10,
-            ),
+                      '1000',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15,
+                      ),
+                    ),
                     Text('Orang'),
                   ],
                 ),
               ),
-              ],
-                ),
-                Row(
+            ],
+          ),
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Container(
-                height: 250,
+                height: 230,
                 width: 150,
                 padding: EdgeInsets.all(15),
                 margin: EdgeInsets.all(15),
@@ -143,42 +117,38 @@ class DetailPost extends StatelessWidget {
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.purple,
+                        color: Colors.pink,
                         spreadRadius: 2,
                         blurRadius: 3,
                         offset: Offset(0, 3), // changes position of shadow
                       )
                     ],
-                    color: Colors.redAccent),
+                    color: Colors.yellow),
                 child: Column(
                   children: <Widget>[
-                    Image.asset('assets/meninggal.png', width: 100),
+                    Image.asset('assets/nangis.png', width: 100),
                     Padding(padding: EdgeInsets.all(10)), //Untuk Jarak paragraf
 
                     Text(
-                      'MENINGGAL \n',
+                      'meninggal \n',
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 15,
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
-              meninggal,
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            SizedBox(
-              height: 10,
-            ),
+                      '1000',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15,
+                      ),
+                    ),
                     Text('Orang'),
                   ],
                 ),
               ),
               Container(
-                height: 250,
+                height: 230,
                 width: 150,
                 padding: EdgeInsets.all(15),
                 margin: EdgeInsets.all(15),
@@ -191,46 +161,40 @@ class DetailPost extends StatelessWidget {
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black,
+                        color: Colors.purpleAccent,
                         spreadRadius: 2,
                         blurRadius: 3,
                         offset: Offset(0, 3), // changes position of shadow
                       )
                     ],
-                    color: Colors.white),
+                    color: Colors.blue),
                 child: Column(
                   children: <Widget>[
-                    Image.asset('assets/global.png', width: 100),
+                    Image.asset('assets/gg.jpeg', width: 100),
                     Padding(padding: EdgeInsets.all(10)), //Untuk Jarak paragraf
 
                     Text(
-                      'INDONESIA \n',
+                      'Data Indonesia\n',
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 15,
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
-              sembuh,
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            SizedBox(
-              height: 10,
-            ),
+                      '1000',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15,
+                      ),
+                    ),
                     Text('Orang'),
                   ],
                 ),
               ),
-              ],
-                ),
-      
-              
             ],
           ),
+        ],
+      ),
     );
   }
-} 
+}

@@ -47,7 +47,40 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  #   - images/a_dot_ham.jpegassets:
+  assets:
+  - assets/senang.png
+  - assets/kecewa.png
+  - assets/nangis.png
+  - assets/martabak1.jpg
+  - assets/martabak2.jpeg
+  - assets/happy-ipM.png
+  - assets/soto.jpeg
+  - assets/wow.jpeg
+  - assets/ml1.jpeg
+  - assets/ml2.jpeg
+  - assets/ml3.jpeg
+  - assets/ml4.jpeg
+  - assets/ml5.jpeg
+  - assets/ml8.jpeg
+  - assets/ml7.jpeg
+  - assets/gg.jpeg
+  - assets/ml8.jpeg
+  - assets/global.png
+  - assets/indonesia.png
+  - assets/wesbek.jpeg
+  - assets/topirimba.jpeg
+  - assets/sleep.jpeg
+  - assets/sarungtangan.jpeg
+  - assets/raincvr.jpeg
+  - assets/nesting.jpeg
+  - assets/kompor.jpeg
+  - assets/jeiger1.jpeg
+  - assets/eiger1.jpg
+  - assets/carrier.jpg
+  - assets/headlamp.jpeg
+  - assets/tenda.jpeg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

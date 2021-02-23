@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'package:http/http.dart';
 import 'get_post_model.dart';
 
-
 class GetPost {
   final String url = "https://api.kawalcorona.com/indonesia";
 
