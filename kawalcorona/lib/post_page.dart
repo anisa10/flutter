@@ -7,6 +7,7 @@ class PostPage extends StatelessWidget {
   final GetPost _getPost = new GetPost();
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       backgroundColor: Colors.teal,
       appBar: AppBar(
@@ -17,13 +18,6 @@ class PostPage extends StatelessWidget {
         builder: (BuildContext context, AsyncSnapshot<List<Post>> snapshot) {
           if (snapshot.hasData) {
             List<Post> dataPost = snapshot.data;
-            // return ListView(
-            //   children: dataPost
-            //       .map((Post item) => ListTile(
-            //             title: Text(item.title),
-            //           ))
-            //       .toList(),
-            // );
             return ListView.builder(
               itemCount: dataPost.length,
               itemBuilder: (context, index) {
@@ -31,24 +25,6 @@ class PostPage extends StatelessWidget {
                   child: Card(
                     child: Row(
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.android,
-                            size: 30,
-                            color: Colors.amber,
-                          ),
-                        ),
-                        Column(
-                          children: [
-                            Container(
-                              child: Text(
-                                dataPost[index].name,
-                                maxLines: 2,
-                                softWrap: true,
-                                overflow: TextOverflow.ellipsis,
-                              ),
-                            ),
                             Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.end,
@@ -61,7 +37,7 @@ class PostPage extends StatelessWidget {
                                         name: dataPost[index].name,
                                         positif: dataPost[index].positif,
                                         sembuh: dataPost[index].sembuh,
-                                        meninggal: dataPost[index].meninggal
+                                        meninggal: dataPost[index].meninggal,    
                                       ),
                                     ));
                                   },
@@ -79,11 +55,9 @@ class PostPage extends StatelessWidget {
                                 Container(),
                               ],
                             ),
-                          ],
+                          ],        
                         ),
-                      ],
                     ),
-                  ),
                 );
               },
             );

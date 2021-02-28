@@ -204,7 +204,7 @@ class DetailPost extends StatelessWidget {
                     Padding(padding: EdgeInsets.all(10)), //Untuk Jarak paragraf
 
                     Text(
-                      'INDONESIA \n',
+                      'DUNIA \n',
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 15,
